@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/font/flaticon.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-icons-container">
+            <!--Barra de navegación con íconos que redireccionana a las redes sociales-->
+            <div class="icons">
+                <!--Utilizo este div dentro del section para estilizar estos íconos hacia la derecha de la pantalla-->
+                <a href="#"><span class="flaticon-001-facebook"></span></a>
+                <!--Las clases corresponden a las denominadas en el archivo de flaticon; se deben trabajar en la etiqueta span preferible/. Estas clases se manejan como font, de ahí que en el css se les pueda aplicar la propiedad color:white-->
+                <a href="#"><span class="flaticon-002-twitter"></span></a>
+                <a href="#"><span class="flaticon-011-instagram"></span></a>
+                <a href="#"><span class="flaticon-010-linkedin"></span></a>
+                <a href="#"><span class="flaticon-008-youtube"></span></a>
+            </div>
+        </section>
+        <nav>
+            <!--Barra de navegación con logo y link a perfil (sobre mí)-->
+            <section class="nav-logo-container">
+                <a href=""><img src="./assets/img/Logo-negro.png" alt="Logo de mi blog"></a>
+            </section>
+            <section class="profile-link">
+                <a href="perfil.html">Sobre mí</a>
+            </section>
+        </nav>
+    </header>
+
+    <main class="blogs-main">
+        <section class="blogs-news-container"> <!--Sección inicial: blog más importante o último blog-->
+            <div class="grid-container blogs-main-news"> <!--Sección inicial blog más importante o último blog: título e imagen-->
+                <h3>Noticias</h3>
+                <figure class="blogs-news-img-container" >
+                    <img src="./assets/img/main-news-img.png" alt="Imagen noticia principal">
+                </figure>
+                <div class="blogs-news-info-container"> <!--Sección inicial blog más importante o último blog: título, contenido del blog y botón de ver más-->
+                    <h2>Título del Blogpost</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facilis similique sequi perferendis itaque ducimus voluptates, quos nemo consequatur iusto doloremque repellat.</p>
+                    <a class="blogs-btn" href="">Leer más</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="blogs-posts-container"> <!--Sección 2: todos los blogs en matriz de 2rows x 3columns-->
+            <div class="grid-container">
+                <h3>últimos Blogpost</h3> <!--Título de últimos blogs que devide la sección 1 de la 2-->
+            
+                <article class="post-container">
+                    <img src="./assets/img/post-1.png" alt="Imagen del post"> <!--Mini img del blog-->
+                    <h4>Título del Blogpost</h4> <!--Título del blog-->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia eius maiores, temporibus, inventore architecto velit ratione magni tempore voluptates perspiciatis qui rerum.</p> <!--Párrafo introductorio del blog-->
+                    <a class="blogs-btn" href="">Leer más</a> <!--Botón Leer más del blog-->
+                </article>
+
+                <article class="post-container">
+                    <img src="./assets/img/post-2.png" alt="Imagen del post">
+                    <h4>Título del Blogpost</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia eius maiores, temporibus, inventore architecto velit ratione magni tempore voluptates perspiciatis qui rerum.</p>
+                    <a class="blogs-btn" href="">Leer más</a>
+                </article>
+
+                <article class="post-container">
+                    <img src="./assets/img/post-3.png" alt="Imagen del post">
+                    <h4>Título del Blogpost</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia eius maiores, temporibus, inventore architecto velit ratione magni tempore voluptates perspiciatis qui rerum.</p>
+                    <a class="blogs-btn" href="">Leer más</a>
+                </article>
+
+                <article class="post-container">
+                    <img src="./assets/img/post-1.png" alt="Imagen del post">
+                    <h4>Título del Blogpost</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia eius maiores, temporibus, inventore architecto velit ratione magni tempore voluptates perspiciatis qui rerum.</p>
+                    <a class="blogs-btn" href="">Leer más</a>
+                </article>
+
+                <article class="post-container">
+                    <img src="./assets/img/post-2.png" alt="Imagen del post">
+                    <h4>Título del Blogpost</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia eius maiores, temporibus, inventore architecto velit ratione magni tempore voluptates perspiciatis qui rerum.</p>
+                    <a class="blogs-btn" href="">Leer más</a>
+                </article>
+
+                <article class="post-container">
+                    <img src="./assets/img/post-3.png" alt="Imagen del post">
+                    <h4>Título del Blogpost</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia eius maiores, temporibus, inventore architecto velit ratione magni tempore voluptates perspiciatis qui rerum.</p>
+                    <a class="blogs-btn" href="">Leer más</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </footer>
+</body>
+
+</html>

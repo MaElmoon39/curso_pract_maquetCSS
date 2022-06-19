@@ -1,8 +1,6 @@
  /*Resetear valores que trae el navegador por defecto*/
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
@@ -10,11 +8,8 @@
 /*Para que en el home el usuario no pueda hacer scroll en la pantalla
 se setean las siguientes propiedades:*/
 body {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin: 0;
+    padding: 0;
     font-size: 62.5%;
     font-family: 'Roboto Mono', monospace;
 }
@@ -23,6 +18,19 @@ a {
     text-decoration: none;
     display: inline;
     color: black;
+}
+
+.home-body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.grid-container {
+    max-width: 980px;
+    margin: auto;
 }
 
 /* ---------- Estilos del header ---------- */
@@ -127,4 +135,90 @@ nav .profile-link a {
     font-family: 'Roboto Slab', monospace;
     font-weight: 700;
     border: white;
+}
+
+/*Blogs*/
+.blogs-main {
+    display: grid;
+}
+
+.blogs-news-container {
+    background-color: #e6e9ed;
+    padding: 0 50px 40px;
+}
+
+.blogs-main-news {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /*esto es para indicar que el contenedor tiene 2 columnas, la 1ra más grande que la 2da*/
+    grid-template-rows: 2fr; /*esto indica que tiene 1 fila*/
+}
+
+.blogs-news-img-container { /*aquí va el h3 y la img de la new mas importante*/
+    grid-column: 1;
+}
+
+.blogs-news-img-container img {
+    width: 85%;
+}
+
+.blogs-news-info-container { /*aquí va el h4, p y a de la news más importante*/
+    grid-column: 2;
+}
+
+.blogs-news-info-container p {
+    margin: 5px 0 35px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.blogs-main-news h3, h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/*Estilos de botón genérico*/
+.blogs-btn {
+    border: 1px solid #47cfac;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+}
+
+/*h3 separación de blog importante de los demás blogs*/
+.blogs-posts-container {
+    padding: 0 50px 40px;
+}
+
+.blogs-posts-container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*Estilos de los demás blogposts*/
+.blogs-posts-container .post-container { /*con estos estilos hago que el container de los mini blogs los organice en cuadrícula de 2rows x 3col*/
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+
+.blogs-posts-container .post-container p {
+    margin-bottom: 35px;
+}
+
+.blogs-posts-container .post-container img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 65px;
+    background-color: #222722; /*con este defino todo el alto del footer*/
+    border-top: 25px solid #47cfac /*y con este defino ela parte superior*/
+}
+
+footer p {
+    color: white;
+    margin-top: 12px;
+    text-align: center;
 }
