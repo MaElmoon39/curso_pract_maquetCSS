@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/font/flaticon.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-icons-container">
+            <!--Barra de navegación con íconos que redireccionana a las redes sociales-->
+            <div class="icons">
+                <!--Utilizo este div dentro del section para estilizar estos íconos hacia la derecha de la pantalla-->
+                <a href="#"><span class="flaticon-001-facebook"></span></a>
+                <!--Las clases corresponden a las denominadas en el archivo de flaticon; se deben trabajar en la etiqueta span preferible/. Estas clases se manejan como font, de ahí que en el css se les pueda aplicar la propiedad color:white-->
+                <a href="#"><span class="flaticon-002-twitter"></span></a>
+                <a href="#"><span class="flaticon-011-instagram"></span></a>
+                <a href="#"><span class="flaticon-010-linkedin"></span></a>
+                <a href="#"><span class="flaticon-008-youtube"></span></a>
+            </div>
+        </section>
+        <nav>
+            <!--Barra de navegación con logo y link a perfil (sobre mí)-->
+            <section class="nav-logo-container">
+                <a href="index.html"><img src="./assets/img/Logo-negro.png" alt="Logo de mi blog"></a>
+            </section>
+            <section class="profile-link">
+                <a href="perfil.html">Sobre mí</a>
+            </section>
+        </nav>
+    </header>
+
+    <main class="perfil-main">
+        <!--Sección 1: mi imagen y texto sobre mí-->
+        <section class="profile-main-container">
+            <div class="grid-container profile-container">
+                <figure>
+                    <img src="./assets/img/profile-pic.jpg" alt="">
+                </figure>
+                <div>
+                    <h2>Hola! mi nombre es Maria Tortello</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga dolorum fugiat labore optio cum. Autem sed, fugit excepturi ex aperiam consectetur? Ut ipsam quis laudantium delectus ex eaque autem quas!</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Sección 2: mis proyectos-->
+        <section class="profile-main-projects">
+            <div class="grid-container">
+                <h3>Proyectos</h3>
+                <div class="projects-main-container">
+                    <article class="projects-container">
+                        <h4>Texto</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea itaque, rem atque accusantium dicta cupiditate voluptatum maxime, aperiam blanditiis quisquam optio minima sed pariatur ipsum recusandae architecto dolorum! Suscipit, dolore.</p>
+                    </article>
+
+                    <article class="projects-container">
+                        <h4>Texto</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea itaque, rem atque accusantium dicta cupiditate
+                            voluptatum maxime, aperiam blanditiis quisquam optio minima sed pariatur ipsum recusandae architecto dolorum!
+                            Suscipit, dolore.</p>
+                    </article>
+
+                    <article class="projects-container">
+                        <h4>Texto</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea itaque, rem atque accusantium dicta cupiditate
+                            voluptatum maxime, aperiam blanditiis quisquam optio minima sed pariatur ipsum recusandae architecto dolorum!
+                            Suscipit, dolore.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- sección de contacto -->
+        <section class="contact-main-container">
+            <div>
+                <img src="./assets/img/013-newsletter.png" alt="Ícono de contacto">
+                <div class="contact-left">
+                    <a href="#">Contacto</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis nulla, nisi molestias quaerat
+                        impedit asperiores officiis similique.</p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="./assets/img/006-like.png" alt="Ícono de scríbeme">
+                <div class="contact-right">
+                    <a href="#">Escribeme</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis nulla, nisi molestias quaerat
+                        impedit asperiores officiis similique.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </footer>
+</body>
+
+</html>
