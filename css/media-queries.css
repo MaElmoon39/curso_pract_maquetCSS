@@ -1,0 +1,39 @@
+/*Aplicando media queries a página de Blogs
+Con el max-width le indico el tamaño máx hasta donde va a cambiar el maquetado*/
+@media (max-width: 600px) { /*este aplica cambios entre 320px (min) y 600px (máx)*/
+    .blogs-posts-container .post-container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width:900px) { /*este aplica cambios entre 601px (min) y 900px (máx)*/
+    .blogs-main-news {
+        grid-template-columns: 1fr;
+        /*con esto digo que cambie todo a 1col*/
+        grid-template-rows: 3fr;
+        /*con esto indico que son 3row*/
+    }
+
+    .blogs-news-img-container {
+        grid-row: 2;
+        /*con esto indico que el contenido pase ahora a la fila 2*/
+    }
+
+    .blogs-news-info-container {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .blogs-posts-container .post-container {
+        max-width: 45%;
+    }
+    .projects-main-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+    }
+    .profile-main-container .profile-container {
+        display: block;
+    }
+}
+
+/*Como el maquetado original se hizo para pantallas grandes (>1024), estos estilos se mantienen a partir de >=901px*/
